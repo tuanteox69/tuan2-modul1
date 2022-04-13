@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Biến, kiểu dữ liệu và toán tử bài 1</title>
+</head>
+<body>
+<form>
+    <p>
+        Vật Lý <input id="ly" type="number">
+    </p><br>
+    <p>
+        Hóa Học <input id="hoa" type="number">
+    </p><br>
+    <p>
+        Sinh học <input id="sinh" type="number">
+    </p><br>
+    <P>
+        <button type="button" onclick="trungbinh()">Trung bình</button>
+    </P>
+    <p>
+        <button type="button" onclick="tong()">Tổng</button>
+    </p>
+</form>
+</body>
+</html>
+<script>
+    function trungbinh(){
+            let a = document.getElementById('ly').value;
+        let b = document.getElementById('hoa').value;
+        let c = document.getElementById('sinh').value;
+        alert((parseInt(a) + parseInt(b) + parseInt(c))/3)
+    }
+    function tong() {
+        let a = document.getElementById('ly').value;
+        let b = document.getElementById('hoa').value;
+        let c = document.getElementById('sinh').value;
+        alert(parseInt(a) + parseInt(b) + parseInt(c))
+    }
+let a = 0;
+    console.log(Boolean(a))
+</script>
