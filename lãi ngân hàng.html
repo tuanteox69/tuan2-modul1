@@ -12,7 +12,7 @@
         <input id="money" type="text">
     </p>
     <p>
-        <button type="button" onclick="lai()">Tổng tiền lãi</button>
+        <button type="button" onclick="lai()">Số tiền lãi</button>
     </p>
 </form>
 </body>
@@ -20,12 +20,9 @@
 <script>
     function
     lai(){
-        let count = document.getElementById("thang").value;
-        let sum = document.getElementById("money").value;
-        while (count < 12){
-            sum+= sum * 7/100;
-            count++;
-        }
-        alert(sum)
+        let a = parseFloat(document.getElementById("thang").value);
+        let b = parseFloat(document.getElementById("money").value);
+
+        alert(b* 7/100 *a/12)
     }
 </script>

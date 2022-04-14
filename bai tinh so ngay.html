@@ -5,6 +5,7 @@
     <title>tinh so ngay</title>
 </head>
 <body>
+<h3> Tháng </h3>
     <p>
         <input id="thang" type="number">
         <button type="button" onclick="day()">Tính số ngày</button>
@@ -25,16 +26,16 @@
             case 8:
             case 10:
             case 12:
-                alert('31')
+                alert('31 day')
                 break;
             case 4:
             case 6:
             case 9:
             case 11:
-                alert('30')
+                alert('30 day')
                 break;
             case 2:
-                alert('28')
+                alert('28 or 29 day')
             default:
                 alert("nhập tháng lại")
         }
