@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện 01</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("mức doanh số bán hàng: (triệu VND)) "));
+    if (a < 100){
+        document.write("mức hoa hồng nhận được :" + a * 5/100 + " triệu VND" )
+    }
+    else {
+        if (a<300){
+            document.write("mức hoa hồng nhận được :" + a * 10/100 + " triệu VND" )
+        }
+        else {
+            if (a>300){
+                document.write("mức hoa hồng nhận được :" + a * 20/100 + " triệu VND" )
+            }
+        }
+    }
+</script>
+</body>
+</html>

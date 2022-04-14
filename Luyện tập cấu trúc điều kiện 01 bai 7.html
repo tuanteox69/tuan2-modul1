@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện 01</title>
+</head>
+<body>
+<h3>
+    Phí thuê bao bắt buộc là 25 nghìn.
+</h3>
+<script>
+    prompt(" gia đình ông (bà) :")
+  let a = parseInt(prompt("Nhập số phút đã sử dụng : "));
+    if (a <50 ){
+        document.write("số tiền  cước điện thoại là : "+ 25000+a*600 +"VND")
+    }
+    else {
+        if (a<150){
+            document.write("số tiền  cước điện thoại là : " +  25000+a*400+"VND")
+        }
+        else {
+            document.write("số tiền  cước điện thoại là : "+ 25000+a*200+"VND")
+        }
+    }
+</script>
+</body>
+</html>
