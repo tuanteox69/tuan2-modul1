@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lãi ngân hàng</title>
+</head>
+<body>
+<form>
+    <P>Số Tháng :
+        <input id="thang" type="text"></P>
+    <p>Số Tiền :
+        <input id="money" type="text">
+    </p>
+    <p>
+        <button type="button" onclick="lai()">Tổng tiền lãi</button>
+    </p>
+</form>
+</body>
+</html>
+<script>
+    function
+    lai(){
+        let count = document.getElementById("thang").value;
+        let sum = document.getElementById("money").value;
+        while (count < 12){
+            sum+= sum * 7/100;
+            count++;
+        }
+        alert(sum)
+    }
+</script>
