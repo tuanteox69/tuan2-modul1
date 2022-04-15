@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Bảng cửu chương</title>
 </head>
 <body>
-$END$
+<div >
+    <table id="div" border="1px">
+
+    </table>
+</div>
 </body>
 </html>
+<script>
+    let str = "";
+    for (let i = 1; i <=10 ; i++) {
+        str += "<tr>"
+        for (let j = 1; j <=10; j++) {
+            str += "<td>" + i +"x" + j + "=" + (i*j) +"</td>"
+        }
+        str += "</tr>"
+    }
+    document.getElementById("div").innerHTML = str
+</script>
