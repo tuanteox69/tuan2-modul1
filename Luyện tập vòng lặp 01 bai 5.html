@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập vòng lặp 01</title>
+</head>
+<body>
+<script>
+    let a = 0 , b= 0, c=0, tong=0
+    let sum = "";
+    for (let i=0; i<20;i++){
+        if(i==0){
+            a=1
+            b=1
+            sum += a+ " "
+            tong +=a
+        }else{
+            a= b+c
+            b = c
+            c = a
+            sum += a + " "
+            tong += a
+            console.log(i +" = "+a)
+        }
+    }
+    document.write("Dãy Fibonacci là "+sum+"<br>")
+    document.write("Tổng của các số = "+tong)
+</script>
+</body>
+</html>
